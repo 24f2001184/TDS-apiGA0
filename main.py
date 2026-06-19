@@ -13,7 +13,7 @@ app.add_middleware(
 
 data = []
 
-with open("students.csv") as f:
+with open("q-fastapi.csv") as f:
     reader = csv.DictReader(f)
     for r in reader:
         data.append({
