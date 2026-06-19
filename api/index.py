@@ -1,4 +1,4 @@
 from main import app
-from mangum import Mangum
 
-handler = Mangum(app)
+def handler(request, context):
+    return app(request, context)
